@@ -79,6 +79,34 @@ export default {
         }
       ]
 
+    },
+    {
+      title: 'Antipasti Current Menu',
+      name: 'antipastiCurrMenu',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'antipasti' }
+          ]
+        }
+      ]
+
+    },
+    {
+      title: 'Specials Menu',
+      name: 'specialsCurrMenu',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'specials' }
+          ]
+        }
+      ]
+
     }
   ]
 }

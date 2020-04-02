@@ -33,6 +33,12 @@ export default {
 
     },
     {
+      name: 'heroText',
+      title: 'Hero Text',
+      description: 'This appears under the order buttons on the home page hero.',
+      type: 'minimalPortableText'
+    },
+    {
       name: 'footerText',
       description: 'This appeares in the footer of the website. Used for the locations text.',
       title: 'Footer Text',

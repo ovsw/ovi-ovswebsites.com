@@ -24,6 +24,9 @@ import puccia from './puccia'
 import insalata from './insalata'
 import menuSettings from './menuSettings'
 import event from './event'
+import minimalPortableText from './minimalPortableText'
+import antipasti from './antipasti'
+import specials from './specials'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -52,6 +55,9 @@ export default createSchema({
     puccia,
     insalata,
     menuSettings,
+    minimalPortableText,
+    antipasti,
+    specials,
     event
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

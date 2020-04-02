@@ -1,8 +1,8 @@
 import S from '@sanity/desk-tool/structure-builder'
 import { MdBusiness, MdSettings, MdLocalPizza, MdViewList } from 'react-icons/md'
-import { FaFile, FaPizzaSlice, FaLeaf, FaLayerGroup } from 'react-icons/fa'
+import { FaFile, FaPizzaSlice, FaLeaf, FaLayerGroup, FaFirstOrder, FaStar } from 'react-icons/fa'
 
-const hiddenTypes = ['category', 'companyInfo', 'page', 'person', 'post', 'menuItem', 'menuSettings', 'siteSettings', 'Savory-Pizza', 'Dessert-Pizza', 'puccia', 'insalata']
+const hiddenTypes = ['category', 'companyInfo', 'page', 'person', 'post', 'menuItem', 'menuSettings', 'siteSettings', 'Savory-Pizza', 'Dessert-Pizza', 'puccia', 'insalata', 'antipasti', 'specials']
 
 export default () =>
   S.list()
@@ -43,6 +43,16 @@ export default () =>
         .schemaType('insalata')
         .child(S.documentTypeList('insalata').title('Insalate'))
         .icon(FaLeaf),
+      S.listItem()
+        .title('Antipasti')
+        .schemaType('antipasti')
+        .child(S.documentTypeList('antipasti').title('Antipasti'))
+        .icon(FaFirstOrder),
+      S.listItem()
+        .title('Specials')
+        .schemaType('specials')
+        .child(S.documentTypeList('specials').title('Specials'))
+        .icon(FaStar),
       S.listItem()
         .title('Blog posts')
         .schemaType('post')

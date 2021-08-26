@@ -158,5 +158,5 @@ export default () =>
             .documentId('companyInfo')
         )
         .icon(MdBusiness),
-      ...S.documentTypeListItems().filter(listItem => !hiddenTypes.includes(listItem.getId()))
+      // ...S.documentTypeListItems().filter(listItem => !hiddenTypes.includes(listItem.getId()))
     ])

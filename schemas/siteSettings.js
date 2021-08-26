@@ -30,13 +30,24 @@ export default {
       type: 'text',
       fieldset: 'seo',
       validation: Rule => Rule.required().error('The SEO Description is missing.')
-
+      
+    },
+    {
+      name: 'onlineOrdersOpen',
+      title: 'Are you accepting online orders?',
+      description: 'This controls if the online order buttons show up on the website or not.',
+      type: 'boolean'
     },
     {
       name: 'heroText',
       title: 'Hero Text',
       description: 'This appears under the order buttons on the home page hero.',
       type: 'minimalPortableText'
+    },
+    {
+      name: 'hoursOfOperation',
+      title: 'Hours Of Operation',
+      type: 'blockText'
     },
     {
       name: 'footerText',
